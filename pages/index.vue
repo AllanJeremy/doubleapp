@@ -129,6 +129,18 @@ export default {
       this.targetAmount = null;
     },
     formatNumber: value => `${value}`.replace(/\B(?=(\d{3})+(?!\d))/g, ','),
+  },
+  head(){
+    return {
+      title: 'DoubleApp',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Money is a doubles game. This tool helps you find out how many times you need to double your money to reach your goal'
+        }
+      ]
+    }
   }
 }
 </script>
