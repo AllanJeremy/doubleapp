@@ -122,7 +122,7 @@ export default {
   methods: {
     /** Checks if the amounts are numbers and valid. Returns true if both the numbers are valid */
     amountsAreValid(){
-      return (!isNaN(this.startingAmount) && !isNaN(this.targetAmount));
+      return this.startingAmount && this.targetAmount;
     },
     clearInputs(){
       this.startingAmount = null;
